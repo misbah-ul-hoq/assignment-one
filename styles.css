@@ -125,6 +125,9 @@ section {
     url("resources/Vectorrr.png");
   min-height: 600px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .midnight-party-section-content {
@@ -132,6 +135,9 @@ section {
   max-width: 697px;
 }
 
+.midnight-party-section img {
+  margin-right: 126px;
+}
 .midnight-party-section-content h1 {
   font-family: Merriweather;
   font-size: 64px;
@@ -272,3 +278,126 @@ section {
   bottom: 280px;
 }
 /* end of holiday sale section stylings */
+
+/* portfolio section stylings */
+.portfolio-section h3 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.portfolio-section h2 {
+  margin-block: 16px 22px;
+}
+
+.portfolio-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.portfolio-grid-item {
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  border: 4px solid transparent;
+  border-radius: 18px;
+}
+
+.portfolio-grid-item:hover {
+  border: 4px solid #f00;
+  opacity: 0.75;
+}
+
+/* end of portfolio section stylings */
+
+/* newsletter section stylings */
+.newsletter-section {
+  /* padding: 80px 212px; */
+  padding-block: 80px;
+  margin-block: 120px;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.05);
+}
+
+.newsletter-section h2 {
+  margin-block: 40px 20px;
+}
+
+.newsletter-section .input-btn {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-section input {
+  border: none;
+  outline: none;
+  padding-block: 16px;
+  padding-inline: 24px 36px;
+  border-radius: 50px 0 0 50px;
+  font-size: 18px;
+}
+
+.newsletter-section button {
+  border-radius: 0 50px 50px 0;
+}
+/* end of newsletter section stylings */
+
+/* footer stylings */
+footer {
+  background-color: #070211;
+  color: white;
+  padding-block: 120px;
+}
+
+footer .top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .top-content .left-col {
+  max-width: 375px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+}
+
+footer .top-content .right-col {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+}
+
+footer .top-content .right-col p,
+a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+footer .top-content .right-col a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .social-icons {
+  margin-block: 98px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+footer .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+/* end of footer stylings */
